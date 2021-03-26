@@ -1,0 +1,518 @@
+0:100  0:100  MemLog inited, TSC freq: 2712438220
+0:100  0:000  CPU was calibrated with RTC
+0:100  0:000  
+0:100  0:000  Now is 15.06.2020,  10:56:40 (GMT)
+0:100  0:000  Starting Clover revision: 5119 (master, commit 0f5da727e) on Lenovo EFI
+0:100  0:000  Build with: [Args: -D NO_GRUB_DRIVERS_EMBEDDED -t GCC53 | -D NO_GRUB_DRIVERS_EMBEDDED --conf=/Users/sergey/src/Clover/Conf -D USE_LOW_EBDA -a X64 -b RELEASE -t GCC53 -n 5 | OS: 10.14.6]
+0:100  0:000  SelfDevicePath=PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(1,GPT,F0A50F06-C522-4426-9338-8258440F5818,0x800,0x82000) @69A54598
+0:100  0:000  SelfDirPath = \EFI\BOOT
+0:102  0:001  Clover : Image base = 0x60D0C000
+0:102  0:000  SimpleTextEx Status=Success
+0:102  0:000  === [ Get Smbios ] ==============================
+0:106  0:004  Type 16 Index = 0
+0:106  0:000  Total Memory Slots Count = 2
+0:106  0:000  Type 17 Index = 0
+0:106  0:000  SmbiosTable.Type17->Speed = 2133MHz
+0:106  0:000  SmbiosTable.Type17->Size = 8192MB
+0:106  0:000  SmbiosTable.Type17->Bank/Device = BANK 0 ChannelA-DIMM0
+0:106  0:000  SmbiosTable.Type17->Vendor = SK Hynix
+0:106  0:000  SmbiosTable.Type17->SerialNumber = 71DD45AA
+0:106  0:000  SmbiosTable.Type17->PartNumber = HMA81GS6AFR8N-UH    
+0:106  0:000  Type 17 Index = 1
+0:106  0:000  SmbiosTable.Type17->Speed = 2133MHz
+0:106  0:000  SmbiosTable.Type17->Size = 8192MB
+0:106  0:000  SmbiosTable.Type17->Bank/Device = BANK 2 ChannelB-DIMM0
+0:106  0:000  SmbiosTable.Type17->Vendor = Kingston
+0:106  0:000  SmbiosTable.Type17->SerialNumber = E6555659
+0:106  0:000  SmbiosTable.Type17->PartNumber = 9905700-025.A00G    
+0:106  0:000  Boot status=0
+0:106  0:000  Running on: '20HAS04B0P' with board '20HAS04B0P'
+0:106  0:000  === [ GetCPUProperties ] ========================
+0:106  0:000  CPU Vendor = 756E6547 Model=806E9
+0:106  0:000   The CPU supported SSE4.1
+0:106  0:000  BrandString = Intel(R) Core(TM) i5-7300U CPU @ 2.60GHz
+0:106  0:000   The CPU supported turbo
+0:106  0:000  MSR 0x35               20004
+0:106  0:000   TSC/CCC Information Leaf:
+0:106  0:000    numerator     : 226
+0:106  0:000    denominator   : 2
+0:106  0:000   Calibrated ARTFrequency: 24003878
+0:106  0:000   Rounded ARTFrequency: 24000000
+0:106  0:000  MSR 0xE2 before patch 7E008008
+0:106  0:000  MSR 0xE2 is locked, PM patches will be turned on
+0:106  0:000  MSR 0xCE              0804043D_F1011B00
+0:106  0:000  corrected FLEX_RATIO = 0
+0:106  0:000  MSR 0x1B0             00000000
+0:106  0:000  FSBFrequency = 97 MHz, DMI FSBFrequency = 100 MHz, Corrected FSBFrequency = 100 MHz
+0:106  0:000  MaxDiv/MinDiv: 27.0/4
+0:106  0:000  Turbo: 35/35/35/35
+0:106  0:000  Features: 0x77FAFBFFBFEBFBFF
+0:106  0:000  Threads: 4
+0:106  0:000  Cores: 2
+0:106  0:000  FSB: 100 MHz
+0:106  0:000  CPU: 2600 MHz
+0:106  0:000  TSC: 2600 MHz
+0:106  0:000  PIS: 100 MHz
+0:106  0:000  ExternalClock: 25 MHz
+0:106  0:000  === [ GetDevices ] ==============================
+0:106  0:000  GOP found at: PciRoot(0x0)/Pci(0x2,0x0)/AcpiAdr(0x80011400)
+0:106  0:000  PCI (00|00:00.00) : 8086 5904 class=060000
+0:106  0:000  PCI (00|00:02.00) : 8086 5916 class=030000
+0:106  0:000   - GOP: Provided by device
+0:106  0:000   - GFX: Model=Intel HD Graphics 620 (Intel)
+0:106  0:000  PCI (00|00:08.00) : 8086 1911 class=088000
+0:106  0:000  PCI (00|00:14.00) : 8086 9D2F class=0C0330
+0:106  0:000  PCI (00|00:14.02) : 8086 9D31 class=118000
+0:107  0:000  PCI (00|00:16.00) : 8086 9D3A class=078000
+0:107  0:000  PCI (00|00:1C.00) : 8086 9D10 class=060400
+0:107  0:000  PCI (00|00:1C.04) : 8086 9D14 class=060400
+0:107  0:000  PCI (00|03:00.00) : 1179 0113 class=010802
+0:107  0:000  PCI (00|00:1C.06) : 8086 9D16 class=060400
+0:107  0:000  PCI (00|04:00.00) : 8086 24FD class=028000
+0:107  0:000   - WIFI: Vendor=32902 = Intel
+0:107  0:000  PCI (00|00:1D.00) : 8086 9D18 class=060400
+0:107  0:000  PCI (00|00:1D.02) : 8086 9D1A class=060400
+0:107  0:000  PCI (00|40:00.00) : 144D A804 class=010802
+0:107  0:000  PCI (00|00:1F.00) : 8086 9D4E class=060100
+0:107  0:000  PCI (00|00:1F.02) : 8086 9D21 class=058000
+0:107  0:000  PCI (00|00:1F.03) : 8086 9D71 class=040300
+0:107  0:000  PCI (00|00:1F.04) : 8086 9D23 class=0C0500
+0:107  0:000  PCI (00|00:1F.06) : 8086 15D7 class=020000
+0:107  0:000   - LAN: 0 Vendor=Intel
+0:107  0:000  === [ GetDefaultSettings ] ======================
+0:107  0:000  Clover load options size = 0 bytes
+0:108  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\20HAS04B0P--00-00-00-00-00-00. Dir not exists
+0:108  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\20HAS04B0P\UEFI. Dir not exists
+0:108  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\20HAS04B0P. Dir not exists
+0:108  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\20HAS04B0P-2600. Dir not exists
+0:108  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\20HAS04B0P. Dir not exists
+0:108  0:000  CheckOEMPathExists tried EFI\CLOVER\OEM\20HAS04B0P-2600. Dir not exists
+0:108  0:000  set OEMPath by default: EFI\CLOVER
+0:111  0:003  EFI\CLOVER\config.plist loaded: Success
+0:121  0:009  === [ GetListOfThemes ] =========================
+0:121  0:000  - [00]: clover-minimal-inverted
+0:122  0:000  === [ Found config plists ] =====================
+0:122  0:000  - config.plist
+0:122  0:000  === [ GetEarlyUserSettings ] ====================
+0:122  0:000  timeout set to 1
+0:122  0:000  Custom boot CUSTOM_BOOT_DISABLED (0x0)
+0:122  0:000   get BlueValue=1.200000
+0:122  0:000  ForceKextsToLoad: 1 requested
+0:122  0:000   - [0]: System\Library\Extensions\IONetworkingFamily.kext
+0:122  0:000  KernelToPatch: 3 requested
+0:122  0:000   - [00]: MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha :: data len: 8
+0:122  0:000   - [01]: Disable panic kext logging on 10.13 release kernel (credit vit9696) :: MatchOS: 10.13.x :: data len: 6
+0:122  0:000   - [02]: Disable panic kext logging on 10.14 release kernel (credit vit9696) :: MatchOS: 10.14.x :: data len: 6
+0:122  0:000  Default theme: clover-minimal-inverted
+0:122  0:000  === [ LoadDrivers ] =============================
+0:123  0:000  Loading ApfsDriverLoader.efi  status=Success
+0:125  0:001   - driver needs connecting
+0:125  0:000  Loading AudioDxe.efi  status=Success
+0:126  0:000   - driver needs connecting
+0:126  0:000  Loading DataHubDxe.efi  status=Success
+0:141  0:015  Loading EmuVariableUefi.efi  status=Success
+0:142  0:001  EmuVariableUefi Initialize: VariableCommonInitialize = Success, orig services stored, install gEmuVariableControlProtocolGuid = Success
+0:142  0:000  Loading FSInject.efi  status=Success
+0:143  0:000  Loading OsxAptioFix3Drv.efi  status=Success
+0:144  0:000  Loading PartitionDxe.efi  status=Success
+0:145  0:000   - driver needs connecting
+0:145  0:000  Loading VBoxHfs.efi  status=Success
+0:146  0:000   - driver needs connecting
+0:146  0:000  Loading VirtualSmc.efi  status=Success
+0:251  0:104  4 drivers needs connecting ...
+0:251  0:000  PlatformDriverOverrideProtocol not found. Installing ... Success
+0:251  0:000  Partition driver loaded: 
+0:251  0:000  APFS driver loaded
+0:251  0:000  Searching for invalid DiskIo BY_DRIVER connects: not found, all ok
+4:419  4:168  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+4:593  0:174  === [ InitScreen ] ==============================
+4:593  0:000  Console modes reported: 6, available modes:
+4:593  0:000   - [01]: 80x25
+4:593  0:000   - [02]: 80x50
+4:593  0:000   - [03]: 240x56 (current mode)
+4:593  0:000   - [04]: 100x31
+4:593  0:000   - [05]: 128x40
+4:593  0:000   - [06]: 160x53
+4:593  0:000  SetMaxResolution: found best mode 0: 1920x1080
+4:593  0:000   - already set
+4:593  0:000  SetScreenResolution: 1920x1080 - already set
+4:593  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(1,GPT,F0A50F06-C522-4426-9338-8258440F5818,0x800,0x82000)
+4:593  0:000  new SelfHandle=69A54598
+4:598  0:004  Using embedded font
+4:599  0:001  === [ GetMacAddress ] ===========================
+4:599  0:000  MAC address of LAN #0= 54:EE:75:DC:BF:C9:
+4:599  0:000  === [ ScanSPD ] =================================
+4:600  0:000  Scanning SMBus [8086:9D23], mmio: 0xDC34B004, ioport: 0xEFA0, hostc: 0x11
+4:619  0:019  Slot: 0 Type 26 8192MB 2400MHz Vendor=SK Hynix PartNo=HMA81GS6AFR8N-UH SerialNo=71DD45AA
+4:638  0:018  Slot: 1 Type 26 8192MB 2400MHz Vendor=Kingston PartNo=9905700-025.A00G SerialNo=E6555659
+4:639  0:001  === [ GetAcpiTablesList ] =======================
+4:649  0:009  Get Acpi Tables List from RSDT:
+4:649  0:000   - [00]: FACP  TP-N1V   len=244
+4:649  0:000   - [01]: UEFI  TP-N1V   len=66
+4:649  0:000   - [02]: SSDT  SaSsdt  len=12506
+4:649  0:000   - [03]: SSDT  PerfTune len=1462
+4:649  0:000   - [04]: HPET  TP-N1V   len=56
+4:649  0:000   - [05]: APIC  TP-N1V   len=188
+4:649  0:000   - [06]: MCFG  TP-N1V   len=60
+4:649  0:000   - [07]: ECDT  TP-N1V   len=83
+4:649  0:000   - [08]: SSDT  ProjSsdt len=5712
+4:649  0:000   - [09]: BOOT  TP-N1V   len=40
+4:649  0:000   - [10]: BATB  TP-N1V   len=74
+4:649  0:000   - [11]: SLIC  TP-N1V   len=374
+4:649  0:000   - [12]: SSDT  CpuSsdt len=6062
+4:649  0:000   - [13]: SSDT  CtdpB len=1389
+4:649  0:000   - [14]: SSDT  UsbCTabl len=1588
+4:649  0:000   - [15]: WSMT  TP-N1V   len=40
+4:649  0:000   - [16]: SSDT  HdaDsp len=321
+4:649  0:000   - [17]: SSDT  TbtTypeC len=1271
+4:649  0:000   - [18]: DBGP  TP-N1V   len=52
+4:649  0:000   - [19]: DBG2  TP-N1V   len=84
+4:649  0:000   - [20]: MSDM  TP-N1V   len=85
+4:649  0:000   - [21]: DMAR  TP-N1V   len=168
+4:649  0:000   - [22]: ASF!  TP-N1V   len=160
+4:649  0:000   - [23]: FPDT  TP-N1V   len=68
+4:649  0:000   - [24]: BGRT  TP-N1V   len=56
+4:649  0:000   - [25]: UEFI  TP-N1V   len=318
+4:649  0:000  Calibrated TSC Frequency = 2712438220 = 2712MHz
+4:650  0:001  === [ GetUserSettings ] =========================
+4:650  0:000  Add 4 devices (kTagTypeDict):
+4:650  0:000  Add 8 properties:
+4:650  0:000   - [00]: NVidia Key: name, len: 9
+4:650  0:000   - [01]: NVidia Key: IOName, len: 9
+4:650  0:000   - [02]: NVidia Key: class-code, len: 4
+4:650  0:000   - [03]: ATI Key: name, len: 9
+4:650  0:000   - [04]: ATI Key: IOName, len: 9
+4:650  0:000   - [05]: ATI Key: class-code, len: 4
+4:650  0:000   - [06]: ATI Key: vendor-id, len: 4
+4:650  0:000   - [07]: ATI Key: device-id, len: 4
+4:650  0:000  USB FixOwnership: yes
+4:650  0:000  Dropping 3 tables:
+4:650  0:000   - [00]: Drop table  signature="#MCF" (46434D23)
+4:650  0:000  ----
+4:650  0:000           - set table: 46434D23,                0 to drop: no
+4:650  0:000   - [01]: Drop table  signature="DMAR" (52414D44)
+4:650  0:000  ----
+4:650  0:000           - set table: 52414D44,                0 to drop: yes
+4:650  0:000   - [02]: Drop table  signature="SSDT" (54445353)
+4:650  0:000   table-id="xh_rvp10" (30317076725F6878)
+4:650  0:000  ----
+4:650  0:000           - set table: 54445353, 30317076725f6878 to drop: no
+4:650  0:000   - final DSDT Fix mask=02001004
+4:650  0:000  PatchesDSDT: 16 requested
+4:650  0:000   - [00]: (change OSID to XSID (to avoid match against _OSI XOSI patch)) lenToFind: 4, lenToReplace: 4, Target Bridge: 
+4:650  0:000    patch disabled at config
+4:650  0:000   - [01]: (change _OSI to XOSI) lenToFind: 4, lenToReplace: 4, Target Bridge: 
+4:650  0:000    patch disabled at config
+4:650  0:000   - [02]: (change _DSM to XDSM) lenToFind: 4, lenToReplace: 4, Target Bridge: 
+4:650  0:000    patch disabled at config
+4:650  0:000   - [03]: (change EC0 to EC) lenToFind: 4, lenToReplace: 4, Target Bridge: 
+4:650  0:000    patch disabled at config
+4:650  0:000   - [04]: (change H_EC to EC) lenToFind: 4, lenToReplace: 4, Target Bridge: 
+4:650  0:000    patch disabled at config
+4:650  0:000   - [05]: (change ECDV to EC) lenToFind: 4, lenToReplace: 4, Target Bridge: 
+4:650  0:000    patch disabled at config
+4:650  0:000   - [06]: (change HDAS to HDEF) lenToFind: 4, lenToReplace: 4, Target Bridge: 
+4:650  0:000    patch disabled at config
+4:650  0:000   - [07]: (change HECI to IMEI) lenToFind: 4, lenToReplace: 4, Target Bridge: 
+4:650  0:000   - [08]: (change MEI to IMEI) lenToFind: 4, lenToReplace: 4, Target Bridge: 
+4:650  0:000   - [09]: (change GFX0 to IGPU) lenToFind: 4, lenToReplace: 4, Target Bridge: 
+4:650  0:000   - [10]: (change PCI0.VID to IGPU #1 (Thinkpad)) lenToFind: 8, lenToReplace: 8, Target Bridge: 
+4:650  0:000   - [11]: (change PCI0.VID to IGPU #2 (Thinkpad)) lenToFind: 14, lenToReplace: 14, Target Bridge: 
+4:650  0:000   - [12]: (change Notify(\_SB.BAT0 to Notify(_SB.BATC) lenToFind: 11, lenToReplace: 11, Target Bridge: 
+4:650  0:000   - [13]: (change Notify(\_SB.BAT1 to Notify(_SB.BATC) lenToFind: 11, lenToReplace: 11, Target Bridge: 
+4:650  0:000   - [14]: (change Notify(BAT0 to Notify(BATC) lenToFind: 5, lenToReplace: 5, Target Bridge: 
+4:650  0:000   - [15]: (change Notify(BAT1 to Notify(BATC) lenToFind: 5, lenToReplace: 5, Target Bridge: 
+4:650  0:000  PluginType: 1
+4:650  0:000  Using ProductName from config: MacBookPro13,1
+4:650  0:000  Using latest BiosVersion from config
+4:650  0:000  BiosVersion: MBP131.88Z.F000.B00.1912161653
+4:650  0:000  BiosReleaseDate: 12/16/2019
+4:650  0:000  Using latest EfiVersion from clover: 245.0.0.0.0
+4:650  0:000  Using FirmwareFeatures from config: 0xFC0FE176
+4:650  0:000  Using FirmwareFeaturesMask from config: 0xFF1FFF7F
+4:650  0:000  Board-ID set from config as Mac-473D31EABEB93F9B
+4:650  0:000  BoardType: 0xA
+4:650  0:000  ChassisType: 0x9
+4:651  0:001  === [ Found DSDT tables ] =======================
+4:652  0:000  - DSDT.aml
+4:677  0:024  === [ ScanVolumes ] =============================
+4:677  0:000  Found 15 volumes with blockIO
+4:677  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)
+4:677  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)
+4:677  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(1,GPT,16BC7B60-BEF0-4D9F-B11B-367B1283AE30,0x22,0x64000)
+4:677  0:000          Result of bootcode detection: bootable unknown (legacy)
+4:678  0:001  - [03]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)
+4:678  0:000          Result of bootcode detection: bootable unknown (legacy)
+4:678  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xF,0x0)
+4:680  0:001  - [05]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xF,0x0)\HD(1,MBR,0x00000000,0x20,0x729BFE0)
+4:686  0:005  - [06]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(1,GPT,F0A50F06-C522-4426-9338-8258440F5818,0x800,0x82000)
+4:686  0:000          Result of bootcode detection: bootable Windows (vista,win)
+4:686  0:000          This is SelfVolume !!
+4:686  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(2,GPT,52FB5A3D-A6B5-4251-9F56-F3E479BB4E8F,0x82800,0x8000)
+4:687  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(3,GPT,C4109C89-FFF3-4484-AF62-7659ED67B8D2,0x8A800,0x1DA74800)
+4:687  0:000          Result of bootcode detection: bootable Windows (vista,win)
+4:687  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(4,GPT,F882B2A5-4A9E-4F3F-8F0A-B36D05BA7154,0x1DAFF000,0x1F4000)
+4:687  0:000          Result of bootcode detection: bootable Windows (vista,win)
+4:687  0:000  - [10]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,AF1771A47010D84E9EF357246611B6D5)
+4:687  0:000  - [11]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BF8D30C93654EF34B2CF878DF2AD761C)
+4:687  0:000  - [12]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,9E5E0092B7A78645BA72CC6A20807AF1)
+4:687  0:000  - [13]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,27DD78C303B08C4D92CE55E9003490F3)
+4:687  0:000  - [14]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BAFBD2327F223142B738069190C61A9C)
+4:687  0:000  Searching volumes for latest nvram.plist ...
+4:688  0:000  loaded Status=Not Found
+4:688  0:000  PutNvramPlistToRtVars: nvram.plist not found
+4:688  0:000  found 2 handles with audio
+4:688  0:000  No AudioIoDevice stored
+4:688  0:000  no stored audio parameters
+4:688  0:000  Found Audio Device Realtek ALC298 (Speaker) at index 0
+4:688  0:000  Found Audio Device Realtek ALC298 (Headphones) at index 1
+4:688  0:000  Found Audio Device Intel Kaby Lake HDMI (HDMI) at index 2
+4:688  0:000  === [ InitXTheme ] ==============================
+4:688  0:000  use Daylight theme
+4:690  0:001  Using theme 'clover-minimal-inverted' (EFI\CLOVER\themes\clover-minimal-inverted)
+4:690  0:000  chosen theme clover-minimal-inverted
+4:690  0:000  OS main and drive as badge
+4:695  0:005  vol_internal not decoded
+4:695  0:000  vol_external not decoded
+4:695  0:000  vol_optical not decoded
+4:695  0:000  vol_firewire not decoded
+4:696  0:000  vol_clover not decoded
+4:696  0:000  vol_internal_hfs not decoded
+4:697  0:001  vol_internal_ntfs not decoded
+4:697  0:000  vol_internal_ext3 not decoded
+4:831  0:133  sound play end with status=Device Error
+4:836  0:004  theme inited
+4:836  0:000  Chosen theme clover-minimal-inverted
+4:836  0:000  found boot-args in NVRAM:-no_compat_check, size=17
+4:836  0:000  ...found arg:-no_compat_check
+4:836  0:000  ...adding arg:-no_compat_check
+4:836  0:000  after NVRAM boot-args= -no_compat_check 
+4:836  0:000  === [ Dump SMC keys from NVRAM ] ================
+4:836  0:000  found AppleSMC protocol
+4:836  0:000  Entry scan disabled
+4:836  0:000  Scanning legacy ...
+4:836  0:000  IconName=vista,win comma=5 size=9
+4:836  0:000    first=os_vista
+4:837  0:000  IconName=vista,win comma=5 size=9
+4:837  0:000    first=os_vista
+4:837  0:000  IconName=vista,win comma=5 size=9
+4:837  0:000    first=os_vista
+4:837  0:000  === [ AddCustomTool ] ===========================
+4:838  0:000  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+4:838  0:000  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+5:012  0:173  === [ GetEfiBootDeviceFromNvram ] ===============
+5:012  0:000  Default boot entry not found
+5:012  0:000  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+5:012  0:000  BannerPlace at Clear Screen [785,227]
+5:071  0:059  AnimeRun=0
+5:122  0:051  GUI ready
+9:533  4:411  ReinitSelfLib after theme change
+9:533  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(1,GPT,F0A50F06-C522-4426-9338-8258440F5818,0x800,0x82000)
+9:533  0:000  new SelfHandle=69A54598
+9:534  0:000  === [ ScanVolumes ] =============================
+9:534  0:000  Found 15 volumes with blockIO
+9:534  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)
+9:534  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)
+9:534  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(1,GPT,16BC7B60-BEF0-4D9F-B11B-367B1283AE30,0x22,0x64000)
+9:534  0:000          Result of bootcode detection: bootable unknown (legacy)
+9:534  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)
+9:534  0:000          Result of bootcode detection: bootable unknown (legacy)
+9:534  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xF,0x0)
+9:536  0:001  - [05]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xF,0x0)\HD(1,MBR,0x00000000,0x20,0x729BFE0)
+9:538  0:001  - [06]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(1,GPT,F0A50F06-C522-4426-9338-8258440F5818,0x800,0x82000)
+9:538  0:000          Result of bootcode detection: bootable Windows (vista,win)
+9:538  0:000          This is SelfVolume !!
+9:538  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(2,GPT,52FB5A3D-A6B5-4251-9F56-F3E479BB4E8F,0x82800,0x8000)
+9:538  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(3,GPT,C4109C89-FFF3-4484-AF62-7659ED67B8D2,0x8A800,0x1DA74800)
+9:538  0:000          Result of bootcode detection: bootable Windows (vista,win)
+9:538  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(4,GPT,F882B2A5-4A9E-4F3F-8F0A-B36D05BA7154,0x1DAFF000,0x1F4000)
+9:538  0:000          Result of bootcode detection: bootable Windows (vista,win)
+9:538  0:000  - [10]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,AF1771A47010D84E9EF357246611B6D5)
+9:539  0:000  - [11]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BF8D30C93654EF34B2CF878DF2AD761C)
+9:539  0:000  - [12]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,9E5E0092B7A78645BA72CC6A20807AF1)
+9:539  0:000  - [13]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,27DD78C303B08C4D92CE55E9003490F3)
+9:539  0:000  - [14]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BAFBD2327F223142B738069190C61A9C)
+9:539  0:000  found 2 handles with audio
+9:540  0:000  No AudioIoDevice stored
+9:540  0:000  no stored audio parameters
+9:540  0:000  Found Audio Device Realtek ALC298 (Speaker) at index 0
+9:540  0:000  Found Audio Device Realtek ALC298 (Headphones) at index 1
+9:540  0:000  Found Audio Device Intel Kaby Lake HDMI (HDMI) at index 2
+9:540  0:000  theme inited
+9:540  0:000  Chosen theme clover-minimal-inverted
+9:540  0:000  found boot-args in NVRAM:-no_compat_check, size=17
+9:540  0:000  ...found arg:-no_compat_check
+9:540  0:000  after NVRAM boot-args= -no_compat_check 
+9:540  0:000  Entry scan disabled
+9:540  0:000  Scanning legacy ...
+9:541  0:000  IconName=vista,win comma=5 size=9
+9:541  0:000    first=os_vista
+9:541  0:000  IconName=vista,win comma=5 size=9
+9:541  0:000    first=os_vista
+9:541  0:000  IconName=vista,win comma=5 size=9
+9:541  0:000    first=os_vista
+9:541  0:000  === [ AddCustomTool ] ===========================
+9:542  0:000  EmuVariable UninstallEmulation: CloseEvent = Invalid Parameter, original var services restored
+9:542  0:000  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+9:718  0:175  === [ GetEfiBootDeviceFromNvram ] ===============
+9:718  0:000  Default boot entry not found
+9:718  0:000  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+9:718  0:000  AnimeRun=0
+10:202  0:484  ReinitSelfLib after theme change
+10:202  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(1,GPT,F0A50F06-C522-4426-9338-8258440F5818,0x800,0x82000)
+10:202  0:000  new SelfHandle=69A54598
+10:202  0:000  === [ ScanVolumes ] =============================
+10:202  0:000  Found 15 volumes with blockIO
+10:202  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)
+10:202  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)
+10:202  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(1,GPT,16BC7B60-BEF0-4D9F-B11B-367B1283AE30,0x22,0x64000)
+10:202  0:000          Result of bootcode detection: bootable unknown (legacy)
+10:203  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)
+10:203  0:000          Result of bootcode detection: bootable unknown (legacy)
+10:203  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xF,0x0)
+10:205  0:001  - [05]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xF,0x0)\HD(1,MBR,0x00000000,0x20,0x729BFE0)
+10:206  0:001  - [06]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(1,GPT,F0A50F06-C522-4426-9338-8258440F5818,0x800,0x82000)
+10:206  0:000          Result of bootcode detection: bootable Windows (vista,win)
+10:206  0:000          This is SelfVolume !!
+10:206  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(2,GPT,52FB5A3D-A6B5-4251-9F56-F3E479BB4E8F,0x82800,0x8000)
+10:207  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(3,GPT,C4109C89-FFF3-4484-AF62-7659ED67B8D2,0x8A800,0x1DA74800)
+10:207  0:000          Result of bootcode detection: bootable Windows (vista,win)
+10:207  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(4,GPT,F882B2A5-4A9E-4F3F-8F0A-B36D05BA7154,0x1DAFF000,0x1F4000)
+10:207  0:000          Result of bootcode detection: bootable Windows (vista,win)
+10:207  0:000  - [10]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,AF1771A47010D84E9EF357246611B6D5)
+10:207  0:000  - [11]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BF8D30C93654EF34B2CF878DF2AD761C)
+10:207  0:000  - [12]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,9E5E0092B7A78645BA72CC6A20807AF1)
+10:207  0:000  - [13]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,27DD78C303B08C4D92CE55E9003490F3)
+10:207  0:000  - [14]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BAFBD2327F223142B738069190C61A9C)
+10:207  0:000  found 2 handles with audio
+10:208  0:000  No AudioIoDevice stored
+10:208  0:000  no stored audio parameters
+10:208  0:000  Found Audio Device Realtek ALC298 (Speaker) at index 0
+10:208  0:000  Found Audio Device Realtek ALC298 (Headphones) at index 1
+10:208  0:000  Found Audio Device Intel Kaby Lake HDMI (HDMI) at index 2
+10:208  0:000  theme inited
+10:208  0:000  Chosen theme clover-minimal-inverted
+10:209  0:000  found boot-args in NVRAM:-no_compat_check, size=17
+10:209  0:000  ...found arg:-no_compat_check
+10:209  0:000  after NVRAM boot-args= -no_compat_check 
+10:209  0:000  Entry scan disabled
+10:209  0:000  Scanning legacy ...
+10:209  0:000  IconName=vista,win comma=5 size=9
+10:209  0:000    first=os_vista
+10:209  0:000  IconName=vista,win comma=5 size=9
+10:209  0:000    first=os_vista
+10:210  0:000  IconName=vista,win comma=5 size=9
+10:210  0:000    first=os_vista
+10:210  0:000  === [ AddCustomTool ] ===========================
+10:211  0:000  EmuVariable UninstallEmulation: CloseEvent = Invalid Parameter, original var services restored
+10:211  0:000  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+10:388  0:177  === [ GetEfiBootDeviceFromNvram ] ===============
+10:388  0:000  Default boot entry not found
+10:388  0:000  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+10:388  0:000  AnimeRun=0
+10:726  0:338  ReinitSelfLib after theme change
+10:726  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(1,GPT,F0A50F06-C522-4426-9338-8258440F5818,0x800,0x82000)
+10:726  0:000  new SelfHandle=69A54598
+10:727  0:000  === [ ScanVolumes ] =============================
+10:727  0:000  Found 15 volumes with blockIO
+10:727  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)
+10:727  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)
+10:727  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(1,GPT,16BC7B60-BEF0-4D9F-B11B-367B1283AE30,0x22,0x64000)
+10:727  0:000          Result of bootcode detection: bootable unknown (legacy)
+10:727  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)
+10:727  0:000          Result of bootcode detection: bootable unknown (legacy)
+10:727  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xF,0x0)
+10:729  0:001          This is SelfVolume !!
+10:729  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xF,0x0)\HD(1,MBR,0x00000000,0x20,0x729BFE0)
+10:731  0:001  - [06]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(1,GPT,F0A50F06-C522-4426-9338-8258440F5818,0x800,0x82000)
+10:731  0:000          Result of bootcode detection: bootable Windows (vista,win)
+10:731  0:000          This is SelfVolume !!
+10:731  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(2,GPT,52FB5A3D-A6B5-4251-9F56-F3E479BB4E8F,0x82800,0x8000)
+10:731  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(3,GPT,C4109C89-FFF3-4484-AF62-7659ED67B8D2,0x8A800,0x1DA74800)
+10:731  0:000          Result of bootcode detection: bootable Windows (vista,win)
+10:731  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(4,GPT,F882B2A5-4A9E-4F3F-8F0A-B36D05BA7154,0x1DAFF000,0x1F4000)
+10:731  0:000          Result of bootcode detection: bootable Windows (vista,win)
+10:731  0:000  - [10]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,AF1771A47010D84E9EF357246611B6D5)
+10:731  0:000  - [11]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BF8D30C93654EF34B2CF878DF2AD761C)
+10:731  0:000  - [12]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,9E5E0092B7A78645BA72CC6A20807AF1)
+10:731  0:000  - [13]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,27DD78C303B08C4D92CE55E9003490F3)
+10:732  0:000  - [14]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BAFBD2327F223142B738069190C61A9C)
+10:732  0:000  found 2 handles with audio
+10:732  0:000  No AudioIoDevice stored
+10:732  0:000  no stored audio parameters
+10:732  0:000  Found Audio Device Realtek ALC298 (Speaker) at index 0
+10:732  0:000  Found Audio Device Realtek ALC298 (Headphones) at index 1
+10:732  0:000  Found Audio Device Intel Kaby Lake HDMI (HDMI) at index 2
+10:732  0:000  theme inited
+10:732  0:000  Chosen theme clover-minimal-inverted
+10:733  0:000  found boot-args in NVRAM:-no_compat_check, size=17
+10:733  0:000  ...found arg:-no_compat_check
+10:733  0:000  after NVRAM boot-args= -no_compat_check 
+10:733  0:000  Entry scan disabled
+10:733  0:000  Scanning legacy ...
+10:733  0:000  IconName=vista,win comma=5 size=9
+10:733  0:000    first=os_vista
+10:734  0:000  IconName=vista,win comma=5 size=9
+10:734  0:000    first=os_vista
+10:734  0:000  IconName=vista,win comma=5 size=9
+10:734  0:000    first=os_vista
+10:734  0:000  === [ AddCustomTool ] ===========================
+10:735  0:000  EmuVariable UninstallEmulation: CloseEvent = Invalid Parameter, original var services restored
+10:735  0:000  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+10:914  0:179  === [ GetEfiBootDeviceFromNvram ] ===============
+10:914  0:000  Default boot entry not found
+10:914  0:000  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+10:914  0:000  AnimeRun=0
+11:181  0:266  ReinitSelfLib after theme change
+11:181  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(1,GPT,F0A50F06-C522-4426-9338-8258440F5818,0x800,0x82000)
+11:181  0:000  new SelfHandle=69A54598
+11:181  0:000  === [ ScanVolumes ] =============================
+11:181  0:000  Found 15 volumes with blockIO
+11:181  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)
+11:181  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)
+11:181  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(1,GPT,16BC7B60-BEF0-4D9F-B11B-367B1283AE30,0x22,0x64000)
+11:181  0:000          Result of bootcode detection: bootable unknown (legacy)
+11:182  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)
+11:182  0:000          Result of bootcode detection: bootable unknown (legacy)
+11:182  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xF,0x0)
+11:184  0:001          This is SelfVolume !!
+11:184  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x14,0x0)\USB(0xF,0x0)\HD(1,MBR,0x00000000,0x20,0x729BFE0)
+11:185  0:001  - [06]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(1,GPT,F0A50F06-C522-4426-9338-8258440F5818,0x800,0x82000)
+11:185  0:000          Result of bootcode detection: bootable Windows (vista,win)
+11:185  0:000          This is SelfVolume !!
+11:185  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(2,GPT,52FB5A3D-A6B5-4251-9F56-F3E479BB4E8F,0x82800,0x8000)
+11:186  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(3,GPT,C4109C89-FFF3-4484-AF62-7659ED67B8D2,0x8A800,0x1DA74800)
+11:186  0:000          Result of bootcode detection: bootable Windows (vista,win)
+11:186  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1D,0x2)\Pci(0x0,0x0)\NVMe(0x1,AE-EC-B1-71-B8-38-25-00)\HD(4,GPT,F882B2A5-4A9E-4F3F-8F0A-B36D05BA7154,0x1DAFF000,0x1F4000)
+11:186  0:000          Result of bootcode detection: bootable Windows (vista,win)
+11:186  0:000  - [10]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,AF1771A47010D84E9EF357246611B6D5)
+11:186  0:000  - [11]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BF8D30C93654EF34B2CF878DF2AD761C)
+11:186  0:000  - [12]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,9E5E0092B7A78645BA72CC6A20807AF1)
+11:186  0:000  - [13]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,27DD78C303B08C4D92CE55E9003490F3)
+11:186  0:000  - [14]: Volume: PciRoot(0x0)\Pci(0x1C,0x4)\Pci(0x0,0x0)\NVMe(0x1,B5-59-5C-00-04-0D-08-00)\HD(2,GPT,747D2932-83C8-46CF-8760-C37EA37D8608,0x64022,0x1BE7FFDE)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BAFBD2327F223142B738069190C61A9C)
+11:186  0:000  found 2 handles with audio
+11:187  0:000  No AudioIoDevice stored
+11:187  0:000  no stored audio parameters
+11:187  0:000  Found Audio Device Realtek ALC298 (Speaker) at index 0
+11:187  0:000  Found Audio Device Realtek ALC298 (Headphones) at index 1
+11:187  0:000  Found Audio Device Intel Kaby Lake HDMI (HDMI) at index 2
+11:187  0:000  theme inited
+11:187  0:000  Chosen theme clover-minimal-inverted
+11:188  0:000  found boot-args in NVRAM:-no_compat_check, size=17
+11:188  0:000  ...found arg:-no_compat_check
+11:188  0:000  after NVRAM boot-args= -no_compat_check 
+11:188  0:000  Entry scan disabled
+11:188  0:000  Scanning legacy ...
+11:188  0:000  IconName=vista,win comma=5 size=9
+11:188  0:000    first=os_vista
+11:188  0:000  IconName=vista,win comma=5 size=9
+11:188  0:000    first=os_vista
+11:188  0:000  IconName=vista,win comma=5 size=9
+11:189  0:000    first=os_vista
+11:189  0:000  === [ AddCustomTool ] ===========================
+11:190  0:000  EmuVariable UninstallEmulation: CloseEvent = Invalid Parameter, original var services restored
+11:190  0:000  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+11:371  0:181  === [ GetEfiBootDeviceFromNvram ] ===============
+11:371  0:000  Default boot entry not found
+11:371  0:000  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+11:371  0:000  AnimeRun=0
